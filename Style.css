@@ -1,0 +1,103 @@
+* {
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: 16px; /* Corrigido para um valor válido */
+    cursor: default;
+}
+
+#principal {
+    /* Adicione estilos aqui, se necessário */
+}
+
+#titulo {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 20px;
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Corrigido o erro de digitação */
+}
+
+#jogador, #computador {
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    color: #fff;
+    padding: 20px;
+}
+
+#jogador h2, #computador h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#jogador {
+    background-color: #ff3333;
+}
+
+#jogador-nome, #computador-nome {
+    font-size: 24px;
+}
+
+#computador-nome {
+    text-align: right;
+}
+
+#jogador-pontos, #computador-pontos {
+    position: absolute;
+    top: 8px;
+    font-size: 52px;
+}
+
+#jogador-pontos {
+    right: 20px;
+}
+
+#jogador #jogador-escolha, #computador #computador-escolha {
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+#jogador #jogador-escolha li, #computador #computador-escolha li {
+    display: inline;
+    padding: 0 15px;
+}
+
+#jogador #jogador-escolha a, #computador #computador-escolha a {
+    opacity: 0.5; /* Ajustado para melhorar a visibilidade */
+    transition: opacity 0.3s ease; /* Adicionado para suavizar a transição */
+}
+
+#jogador #jogador-escolha a:hover, 
+#jogador #jogador-escolha a.selecionada, 
+#computador #computador-escolha a.selecionada {
+    opacity: 1; /* Ajustado para destacar melhor os elementos selecionados */
+}
+
+#jogador #jogador-escolha img, #computador #computador-escolha img {
+    max-width: 80px;
+}
+
+#computador {
+    background-color: #33adff;
+}
+
+#versus {
+    font-size: 80px;
+    padding: 0 52px;
+}
+
+#mensagem {
+    background-color: #575a5c;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
